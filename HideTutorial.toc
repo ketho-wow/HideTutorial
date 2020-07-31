@@ -3,5 +3,7 @@
 ## Title: HideTutorial
 ## Notes: Hides those annoying help plates and tutorials
 ## Author: Ketho
+## X-Curse-Project-ID: 399282
+## X-WoWI-ID: 25635
 
 HideTutorial.lua
