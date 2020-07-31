@@ -1,0 +1,7 @@
+## Interface: 80300
+## Version: @project-version@
+## Title: HideTutorial
+## Notes: Hides those annoying help plates and tutorials
+## Author: Ketho
+
+HideTutorial.lua
