@@ -3,6 +3,7 @@
 local function OnEvent(self, event)
 	SetCVar("showTutorials", 0)
 	SetCVar("showNPETutorials", 0)
+	SetCVar("hideAdventureJournalAlerts", 1)
 
 	-- help plates
 	for i = 1, NUM_LE_FRAME_TUTORIALS do
