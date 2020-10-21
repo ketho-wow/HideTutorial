@@ -3,7 +3,7 @@
 ## Title: HideTutorial
 ## Notes: Hides those annoying help plates and tutorials
 ## Author: Ketho
-## SavedVariablesPerCharacter: HideTutorialDB
+## SavedVariablesPerCharacter: HideTutorialDB2
 ## X-Curse-Project-ID: 399282
 ## X-WoWI-ID: 25635
 

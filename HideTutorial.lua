@@ -4,8 +4,10 @@ local pendingChanges
 -- VARIABLES_LOADED seems to consistently fire after ADDON_LOADED
 local function OnEvent(self, event, addon)
 	if event == "ADDON_LOADED" and addon == "HideTutorial" then
-		if not HideTutorialDB then -- only do this once per character
-			HideTutorialDB = true
+		local tocVersion = select(4, GetBuildInfo())
+		if not HideTutorialDB2 or HideTutorialDB2 < tocVersion then
+			-- only do this once per character
+			HideTutorialDB2 = tocVersion
 			pendingChanges = true
 		end
 	elseif event == "VARIABLES_LOADED" then
