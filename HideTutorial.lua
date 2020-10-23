@@ -23,6 +23,11 @@ local function OnEvent(self, event, addon)
 				C_CVar.SetCVarBitfield("closedInfoFramesAccountWide", i, true)
 			end
 		end
+		if not IsAddOnLoaded("HideTalentAlert") then
+			function MainMenuMicroButton_AreAlertsEnabled()
+				return false
+			end
+		end
 	end
 end
 
