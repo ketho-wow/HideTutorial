@@ -32,6 +32,16 @@ local function OnEvent(self, event, addon)
 	end
 end
 
+-- if you're in Exile's Reach and level 1 this cvar gets automatically enabled
+hooksecurefunc("NPE_CheckTutorials", function()
+	if C_PlayerInfo.IsPlayerNPERestricted() and UnitLevel("player") == 1 then
+		SetCVar("showTutorials", 0)
+		NewPlayerExperience:Shutdown()
+		-- for some reason this window still shows up
+		NPE_TutorialKeyboardMouseFrame_Frame:Hide()
+	end
+end)
+
 local f = CreateFrame("Frame")
 f:RegisterEvent("ADDON_LOADED")
 f:RegisterEvent("VARIABLES_LOADED")
