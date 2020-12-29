@@ -1,4 +1,3 @@
--- License: Public Domain
 local pendingChanges
 
 -- VARIABLES_LOADED seems to consistently fire after ADDON_LOADED
