@@ -1,4 +1,4 @@
-## Interface: 90005
+## Interface: 90207
 ## Version: @project-version@
 ## Title: HideTutorial
 ## Notes: Hides those annoying help plates and tutorials
