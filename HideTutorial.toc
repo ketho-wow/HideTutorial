@@ -1,4 +1,4 @@
-## Interface: 90207
+## Interface: 100002
 ## Version: @project-version@
 ## Title: HideTutorial
 ## Notes: Hides those annoying help plates and tutorials
@@ -6,5 +6,6 @@
 ## SavedVariablesPerCharacter: HideTutorialDB2
 ## X-Curse-Project-ID: 399282
 ## X-WoWI-ID: 25635
+## X-Wago-ID: e56nnd69
 
 HideTutorial.lua

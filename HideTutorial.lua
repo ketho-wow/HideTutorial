@@ -34,10 +34,8 @@ end
 -- if you're in Exile's Reach and level 1 this cvar gets automatically enabled
 hooksecurefunc("NPE_CheckTutorials", function()
 	if C_PlayerInfo.IsPlayerNPERestricted() and UnitLevel("player") == 1 then
+		print("HideTutorial: Disabling NPE tutorial, please disregard the Blizzard debug prints.")
 		SetCVar("showTutorials", 0)
-		NewPlayerExperience:Shutdown()
-		-- for some reason this window still shows up
-		NPE_TutorialKeyboardMouseFrame_Frame:Hide()
 	end
 end)
 
