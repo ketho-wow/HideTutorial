@@ -10,11 +10,12 @@ local function OnEvent(self, event, addon)
 			pendingChanges = true
 		end
 	elseif event == "VARIABLES_LOADED" then
+		C_CVar.SetCVar("showTutorials", 0)
+		C_CVar.SetCVar("showNPETutorials", 0)
+		C_CVar.SetCVar("hideAdventureJournalAlerts", 1)
+		C_CVar.RegisterCVar("hideHelptips", 1)
 		local lastInfoFrame = C_CVar.GetCVarBitfield("closedInfoFrames", NUM_LE_FRAME_TUTORIALS)
 		if pendingChanges or not lastInfoFrame then
-			C_CVar.SetCVar("showTutorials", 0)
-			C_CVar.SetCVar("showNPETutorials", 0)
-			C_CVar.SetCVar("hideAdventureJournalAlerts", 1)
 			-- help plates
 			for i = 1, NUM_LE_FRAME_TUTORIALS do
 				C_CVar.SetCVarBitfield("closedInfoFrames", i, true)
