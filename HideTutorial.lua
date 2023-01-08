@@ -13,7 +13,7 @@ local function OnEvent(self, event, addon)
 		C_CVar.SetCVar("showTutorials", 0)
 		C_CVar.SetCVar("showNPETutorials", 0)
 		C_CVar.SetCVar("hideAdventureJournalAlerts", 1)
-		C_CVar.RegisterCVar("hideHelptips", 1)
+		--C_CVar.RegisterCVar("hideHelptips", 1) -- this can actually block interaction with mission tables
 		local lastInfoFrame = C_CVar.GetCVarBitfield("closedInfoFrames", NUM_LE_FRAME_TUTORIALS)
 		if pendingChanges or not lastInfoFrame then
 			-- help plates
