@@ -1,0 +1,6 @@
+{
+    "Lua.diagnostics.globals": [
+        "NUM_LE_FRAME_TUTORIALS",
+        "NUM_LE_FRAME_TUTORIAL_ACCCOUNTS"
+    ]
+}
